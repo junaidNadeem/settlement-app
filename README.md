@@ -24,9 +24,9 @@ project-root
 ├── frontend
 │   ├── public
 │   ├── src
-|   |    ├── App.js
-|   |    ├── PartyA.js
-|   |    └── PartyB.js
+│   │   ├── App.js
+│   │   ├── PartyA.js
+│   │   └── PartyB.js
 │   ├── package.json
 │   └── ... (other React project files)
 │
@@ -90,15 +90,18 @@ The project uses WebSocket to ensure Party B is always updated with the latest s
 
 ## API Endpoints
 
-**GET /settlement/latest**: Fetch the latest settlement amount.
-**GET /response/latest**: Fetch the latest response status from Party B.
-**POST /settlement/update**: Update the settlement amount by Party A.
-**POST /response/submit**: Respond to the settlement by Party B.
+- **GET /settlement/latest**: Fetch the latest settlement amount.
+- **GET /response/latest**: Fetch the latest response status from Party B.
+- **POST /settlement/update**: Update the settlement amount by Party A.
+- **POST /response/submit**: Respond to the settlement by Party B.
 
-## UI Components:
+## UI Components
 
-**App.js:** Displays both components based on URL
-**PartyA.js:** Handles settlement amount input and update functionality. Also implements functionality to fetch latest response.
-**PartyB.js:** Displays the latest settlement amount and allows Party B to respond to the settlement (Agree to it or dispute it).
+- **App.js**: Displays both components based on URL.
+- **PartyA.js**: Handles settlement amount input and update functionality. Also implements functionality to fetch the latest response.
+- **PartyB.js**: Displays the latest settlement amount and allows Party B to respond to the settlement (agree to it or dispute it).
 
-**NOTE:** navigate to [http://localhost:3001/partya](`/partya`) for Party A interface and [http://localhost:3001/partyb](`/partyb`) for Party B interface
+**NOTE:**
+
+- Navigate to [http://localhost:3001/partyA](http://localhost:3001/partyA) for Party A interface
+- Navigate to [http://localhost:3001/partyB](http://localhost:3001/partyB) for Party B interface
