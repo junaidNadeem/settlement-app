@@ -90,14 +90,15 @@ The project uses WebSocket to ensure Party B is always updated with the latest s
 
 ## API Endpoints
 
- **GET /settlement/latest**: Fetch the latest settlement amount.
- **GET /response/latest**: Fetch the latest response status from Party B.
- **POST /settlement/update**: Update the settlement amount by Party A.
- **POST /response/submit**: Respond to the settlement by Party B.
+**GET /settlement/latest**: Fetch the latest settlement amount.
+**GET /response/latest**: Fetch the latest response status from Party B.
+**POST /settlement/update**: Update the settlement amount by Party A.
+**POST /response/submit**: Respond to the settlement by Party B.
 
 ## UI Components:
- **App.js:** Displays both components based on URL
- **PartyA.js:** Handles settlement amount input and update functionality. Also implements functionality to fetch latest response.
- **PartyB.js:** Displays the latest settlement amount and allows Party B to respond to the settlement (Agree to it or dipute it).
 
- **NOTE:** navigate to [http://localhost:3001/partya](`/partya`) for Party A interface and [http://localhost:3001/partyb](`/partyb`) for Party B interface 
+**App.js:** Displays both components based on URL
+**PartyA.js:** Handles settlement amount input and update functionality. Also implements functionality to fetch latest response.
+**PartyB.js:** Displays the latest settlement amount and allows Party B to respond to the settlement (Agree to it or dispute it).
+
+**NOTE:** navigate to [http://localhost:3001/partya](`/partya`) for Party A interface and [http://localhost:3001/partyb](`/partyb`) for Party B interface
